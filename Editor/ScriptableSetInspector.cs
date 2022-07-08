@@ -133,8 +133,14 @@ namespace NiftyScriptableSet
 
             var instance = CreateInstance(selectedType) as TAsset;
             instance.name = instanceName;
-
+            PreProcessItem(instance);
+            
             InsertItem(instance);
+        }
+
+        protected virtual void PreProcessItem(TAsset item)
+        {
+            
         }
 
         private void InsertItem(TAsset item)
