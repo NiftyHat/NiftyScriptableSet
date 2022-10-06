@@ -424,7 +424,14 @@ namespace NiftyScriptableSet
         {
             string path = AssetDatabase.GetAssetPath(asset);
             AssetDatabase.RenameAsset(path, name);
+            #if UNITY_2022 
             AssetDatabase.SaveAssetIfDirty(asset);
+            #else
+            if (EditorUtility.IsDirty(asset))
+            {
+                AssetDatabase.SaveAssets();
+            }
+#endif
         }
 
         /// <summary>
