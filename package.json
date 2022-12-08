@@ -1,6 +1,6 @@
 {
   "name": "com.niftyhat.scriptableset",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "displayName": "Nifty Scriptable Set",
   "description": "Scriptable Set",
   "keywords": [
@@ -14,6 +14,6 @@
     "url": "https://www.niftyhat.com"
   },
   "dependencies": {
-    "com.niftyhat.editormenu" : "0.4.0"
+    "com.niftyhat.editormenu" : "0.4.1"
   }
 }

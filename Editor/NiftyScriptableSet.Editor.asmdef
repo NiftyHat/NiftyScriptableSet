@@ -1,16 +1,17 @@
 {
     "name": "NiftyScriptableSet.Editor",
-    "rootNamespace": "NiftyScriptableSet",
     "references": [
         "GUID:ba7f78e058b1ed141863492adbfe0924",
         "GUID:497348a8c13a0a843a23f83c649bccc8"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
-    "autoReferenced": true,
+    "autoReferenced": false,
     "defineConstraints": [],
     "versionDefines": [],
     "noEngineReferences": false
